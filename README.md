@@ -361,21 +361,13 @@ The setup guide covers:
 
 ## Documentation
 
-
-
 | Document | Description |
-
-|-----------|-------------|
-
-| architecture.md | High-level application architecture |
-
-| deployment_architecture.md | Deployment and data pipeline architecture |
-
-| setup_steps.md | Complete deployment guide |
-
-| iam_permissions.md | Required AWS and Redshift permissions |
-
-| sample_outputs.md | Example application outputs |
+|---|---|
+| `docs/architecture.md` | High-level application architecture |
+| `docs/deployment_architecture.md` | Deployment and data pipeline architecture |
+| `docs/setup_steps.md` | Complete deployment guide |
+| `docs/iam_permissions.md` | Required AWS and Redshift permissions |
+| `docs/sample_outputs.md` | Example application outputs |
 
 
 
