@@ -1,0 +1,45 @@
+{
+    "display_information": {
+        "name": "PART_FINDER",
+        "description": "Input Part number and home SITE_CODE to get organized inventory data across sites along with site specific planner Id's sorted by nearest sites.",
+        "background_color": "#398e91",
+        "long_description": "This app finds spare parts across nearest multiple sites, sorts from nearest to farthest distance, includes POC at each site as well as other meta data of spare parts such as min/max, inventory status etc. \r\nWorkflow\r\nInput: User enters the [part number]<space>[home Site code]\r\nOutput: spare parts data across multiple sites sorted by closest to home site along with site specific planner id's."
+    },
+    "features": {
+        "app_home": {
+            "home_tab_enabled": false,
+            "messages_tab_enabled": true,
+            "messages_tab_read_only_enabled": false
+        },
+        "bot_user": {
+            "display_name": "PART_FINDER",
+            "always_online": true
+        }
+    },
+    "oauth_config": {
+        "scopes": {
+            "bot": [
+                "app_mentions:read",
+                "chat:write",
+                "users:read"
+            ]
+        },
+        "pkce_enabled": false
+    },
+    "settings": {
+        "event_subscriptions": {
+            "request_url": "https://your-api-gateway-url.amazonaws.com/events",
+            "bot_events": [
+                "app_mention"
+            ]
+        },
+        "interactivity": {
+            "is_enabled": true,
+            "request_url": "https://your-api-gateway-url.amazonaws.com/interactions"
+        },
+        "org_deploy_enabled": true,
+        "socket_mode_enabled": false,
+        "token_rotation_enabled": false,
+        "is_mcp_enabled": false
+    }
+}
